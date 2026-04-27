@@ -1,0 +1,20 @@
+Configurar Resolução para Pixel Art
+- Projeto -> configurações
+- Na barra lateral: Exibição -> Janela
+- Marcar "Configurações avançadas" no topo da janela
+Preencher:
+	- Largura da Viewport: 320
+	- Altura da Viewport: 240
+	- Substituir largura da janela: 1280
+	- Substituir altura da janela: 720
+	- Em "Esticar" -> "Modo" colocar "Viewport"
+- Na barra lateral: Renderização -> Texturas
+	- Mudar "Filtro de textura padrão" para "Nearest"
+
+
+
+Configurar teclas de entrada
+- Projeto -> configurações -> Mapa de entrada
+- Criar as seguintes ações:
+	walk_left, walk_right, walk_up, walk_down, shoot, action
+- Atribua teclas do teclado e clique do mouse para as ações
