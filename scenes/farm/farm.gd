@@ -1,9 +1,11 @@
 extends Node2D
 @onready var soil: TileMapLayer = $Map/Soil
 @onready var player: Player = $Player
+@onready var tile_highlight: Node2D = $TileHighlight
 
 
 func _ready() -> void:
+	tile_highlight.tile_selected.connect(_on_tile_selected)
 	pass
 
 

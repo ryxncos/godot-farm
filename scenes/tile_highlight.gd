@@ -14,6 +14,9 @@ func _process(delta:float) -> void:
 		tile = cell
 		queue_redraw()
 		
+	if Input.is_action_just_pressed("click"):
+		tile_selected.emit(tile)
+		
 func _draw() -> void:
 	var cell_local_pos = tilemap_layer.map_to_local(tile) #Chamado sempre pra desenhar no mapa=
 	var tile_size = tilemap_layer.tile_set.tile_size
@@ -25,3 +28,7 @@ func _draw() -> void:
 	
 	draw_rect(rect, Color(1,1,0,0.4))
 	
+
+
+func _on_tile_selected(tile_pos: Variant) -> void:
+	pass # Replace with function body.
