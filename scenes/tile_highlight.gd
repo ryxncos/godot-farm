@@ -28,7 +28,3 @@ func _draw() -> void:
 	
 	draw_rect(rect, Color(1,1,0,0.4))
 	
-
-
-func _on_tile_selected(tile_pos: Variant) -> void:
-	pass # Replace with function body.
