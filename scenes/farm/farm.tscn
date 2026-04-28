@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ujpjnp0g80gw" path="res://scenes/farm/farm.gd" id="1_ogqxe"]
 [ext_resource type="TileSet" uid="uid://bbpk04bbohkb5" path="res://resources/tileset_farm.tres" id="2_wgrn4"]
 [ext_resource type="PackedScene" uid="uid://r3233i8hch3r" path="res://scenes/player.tscn" id="3_fev0l"]
+[ext_resource type="PackedScene" uid="uid://dtpsflysgygab" path="res://scenes/TileHighlight.tscn" id="4_xp5e4"]
 
 [node name="Farm" type="Node2D" unique_id=1359242315]
 y_sort_enabled = true
@@ -36,3 +37,6 @@ tile_set = ExtResource("2_wgrn4")
 
 [node name="Player" parent="." unique_id=496824501 instance=ExtResource("3_fev0l")]
 position = Vector2(241, 138)
+
+[node name="TileHighlight" parent="." unique_id=1912218052 node_paths=PackedStringArray("tilemap_layer") instance=ExtResource("4_xp5e4")]
+tilemap_layer = NodePath("../Map/Soil")

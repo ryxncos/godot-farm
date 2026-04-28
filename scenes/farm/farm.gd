@@ -14,4 +14,5 @@ func _process(delta: float) -> void:
 		var tile = soil.local_to_map(mouse)
 		soil.set_cell(tile, 0, Vector2i(3,14))
 		print(mouse) 
+	pass
 	
