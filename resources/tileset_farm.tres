@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b26mnxkxf43fb" path="res://assets/Tilesets/Tileset_general.png" id="1_bxfdd"]
 [ext_resource type="Texture2D" uid="uid://duhoe05xhijkj" path="res://assets/Tilesets/Water.png" id="2_s0a4b"]
+[ext_resource type="PackedScene" uid="uid://824gb43wolo0" path="res://scenes/Door.tscn" id="2_v5sjd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jwdi7"]
 texture = ExtResource("1_bxfdd")
@@ -931,6 +932,10 @@ texture = ExtResource("1_bxfdd")
 2:15/size_in_atlas = Vector2i(1, 2)
 2:15/0 = 0
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_ve2xf"]
+resource_name = "PORTA"
+scenes/1/scene = ExtResource("2_v5sjd")
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k34ll"]
 texture = ExtResource("2_s0a4b")
 0:0/animation_frame_0/duration = 0.3
@@ -948,3 +953,4 @@ terrain_set_0/terrain_1/name = "Grass"
 terrain_set_0/terrain_1/color = Color(1, 0.571133, 0.570703, 1)
 sources/0 = SubResource("TileSetAtlasSource_jwdi7")
 sources/2 = SubResource("TileSetAtlasSource_k34ll")
+sources/1 = SubResource("TileSetScenesCollectionSource_ve2xf")
